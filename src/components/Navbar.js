@@ -9,14 +9,9 @@ import {
   Image,
   useDisclosure,
   Slide,
-  Collapse,
-  Fade,
-  keyframes,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import logo from '../assets/img/logo.png';
-import { transform } from 'framer-motion';
 
 const Links = [
   'Home',
@@ -27,20 +22,12 @@ const Links = [
   'Contact',
 ];
 
-/*const reveal = keyframes`
-      from {transform: scaleX(0);}
-      to {transform: scaleX(1);}
-      `
-      animation={`${reveal} 1.2s linear`}
-*/
-
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
     px={1}
     borderBottom='4px solid transparent'
     color={'white'}
     _hover={{
-      //textDecoration: 'underline solid #FDC20A 4px',
       borderBottom: '4px solid #FDC20A',
       transitionDuration: '1s',
     }}
@@ -100,7 +87,7 @@ export default function Navbar() {
         </Flex>
       </Box>
 
-      {isOpen ? (
+      {isOpen && (
         <Slide
           direction='center'
           in={isOpen}
@@ -124,7 +111,7 @@ export default function Navbar() {
             </Flex>
           </Box>
         </Slide>
-      ) : null}
+      )}
     </Flex>
   );
 }

@@ -20,8 +20,8 @@ const Footer = () => {
           <VStack spacing={0} align={'start'}>
             <Text padding={0} margin={0}>
               <PhoneIcon color={'#FDC20A'} /> Contact:{' '}
-              <Link target={'_blank'} href={'tel:+911234567890'}>
-                +91 1234567890
+              <Link target={'_blank'} href={'tel:+918762719014'}>
+                +91 87627 19014
               </Link>
             </Text>
             <Text padding={0} margin={0}>

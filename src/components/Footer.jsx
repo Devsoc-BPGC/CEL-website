@@ -6,7 +6,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <Box bg='black' color='white'>
-      <VStack>
+      <VStack paddingY={4}>
         <HStack
           width={'100%'}
           paddingStart={5}
@@ -19,18 +19,27 @@ const Footer = () => {
           </Text>
           <VStack spacing={0} align={'start'}>
             <Text padding={0} margin={0}>
-              <PhoneIcon color={'#FDC20A'} /> Contact: +91 1234567890
+              <PhoneIcon color={'#FDC20A'} /> Contact:{' '}
+              <Link target={'_blank'} href={'tel:+911234567890'}>
+                +91 1234567890
+              </Link>
             </Text>
             <Text padding={0} margin={0}>
-              <EmailIcon color={'#FDC20A'} /> Email: team@celbitsgoa.com
+              <EmailIcon color={'#FDC20A'} /> Email:{' '}
+              <Link target={'_blank'} href={'mailto:team@celbitsgoa.com'}>
+                team@celbitsgoa.com
+              </Link>
             </Text>
           </VStack>
         </HStack>
-        <Text textAlign={'center'}>
+        <HStack align={'center'}>
+          <Text>Made with </Text>
+          <Icon as={BsHeart} color={'#FDC20A'} />
+          <Text> by </Text>
           <Link target={'_blank'} href={'https://devsoc.club/'}>
-            Made with <Icon as={BsHeart} color={'#FDC20A'} /> by DevSoc
+            DevSoc
           </Link>
-        </Text>
+        </HStack>
       </VStack>
     </Box>
   );

@@ -1,13 +1,6 @@
 import React from 'react';
 
-import {
-  ChakraProvider,
-  Flex,
-  VStack,
-  Box,
-  Text,
-  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Box, theme } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import { TeamMemberGrid } from './components/TeamMemberGrid';
 

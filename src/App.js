@@ -8,9 +8,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <Box textAlign='center' color='white' bg='black' p={100}>
-        <TeamMemberGrid />
-      </Box>
+      <TeamMemberGrid />
     </ChakraProvider>
   );
 }

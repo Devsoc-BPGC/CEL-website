@@ -1,4 +1,4 @@
-import { Box, Text, VStack, HStack } from '@chakra-ui/react';
+import { Box, Text, VStack, HStack, Link } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 import React from 'react';
 
@@ -27,7 +27,13 @@ const Footer = () => {
             </Text>
           </VStack>
         </HStack>
-        <Text textAlign={'center'}> Made with 💛 by DevSoc</Text>
+        <Text textAlign={'center'}>
+          {' '}
+          <Link target={'_blank'} href={'https://devsoc.club/'}>
+            {' '}
+            Made with 💛 by DevSoc{' '}
+          </Link>{' '}
+        </Text>
       </VStack>
     </Box>
   );

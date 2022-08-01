@@ -1,5 +1,6 @@
-import { Box, Text, VStack, HStack, Link } from '@chakra-ui/react';
+import { Box, Text, VStack, HStack, Link, Icon } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
+import { BsHeart } from 'react-icons/bs';
 import React from 'react';
 
 const Footer = () => {
@@ -18,21 +19,17 @@ const Footer = () => {
           </Text>
           <VStack spacing={0} align={'start'}>
             <Text padding={0} margin={0}>
-              {' '}
-              <PhoneIcon color={'#FDC20A'} /> Contact: +91 1234567890{' '}
+              <PhoneIcon color={'#FDC20A'} /> Contact: +91 1234567890
             </Text>
             <Text padding={0} margin={0}>
-              {' '}
-              <EmailIcon color={'#FDC20A'} /> Email: team@celbitsgoa.com{' '}
+              <EmailIcon color={'#FDC20A'} /> Email: team@celbitsgoa.com
             </Text>
           </VStack>
         </HStack>
         <Text textAlign={'center'}>
-          {' '}
           <Link target={'_blank'} href={'https://devsoc.club/'}>
-            {' '}
-            Made with 💛 by DevSoc{' '}
-          </Link>{' '}
+            Made with <Icon as={BsHeart} color={'#FDC20A'} /> by DevSoc
+          </Link>
         </Text>
       </VStack>
     </Box>

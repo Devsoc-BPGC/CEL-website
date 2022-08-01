@@ -15,13 +15,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <Box textAlign='center' p={30}>
-        <Flex alignItems='start'>
-          <VStack>
-            <Text>Coordinators</Text>
-            <Text>For 2022-2023</Text>
-          </VStack>
-        </Flex>
+      <Box textAlign='center' color='white' bg='black' p={100}>
         <TeamMemberGrid />
       </Box>
     </ChakraProvider>

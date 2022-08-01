@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
-import { Avatar } from '@chakra-ui/react';
+import { Box, Text, Avatar } from '@chakra-ui/react';
 
 export const TeamMemberCard = () => {
   return (

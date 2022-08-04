@@ -1,47 +1,58 @@
-import { Box, Text, VStack, HStack, Link, Icon } from '@chakra-ui/react';
+import { Text, VStack, HStack, Link, Icon, Flex } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 import { BsHeart } from 'react-icons/bs';
 import React from 'react';
 
 const Footer = () => {
   return (
-    <Box bg='black' color='white'>
-      <VStack paddingY={4}>
-        <HStack
-          width={'100%'}
-          paddingStart={5}
-          paddingEnd={5}
-          justify={'space-between'}
-          align={'center'}
+    <Flex
+      bg='black'
+      color='white'
+      flexDirection={'column'}
+      px={{ base: '0.75rem', sm: '1rem', md: '2rem' }}
+      py={'1rem'}
+    >
+      <Flex
+        direction={{ base: 'column', lg: 'row' }}
+        justifyContent={'space-between'}
+        alignContent={{ base: 'flex-start', lg: 'center' }}
+      >
+        <Text
+          fontWeight={800}
+          fontSize={{ base: '1rem', sm: '1.5rem', md: '2rem' }}
+          py={{ base: '0.25rem', md: '0' }}
         >
-          <Text fontWeight={800} fontSize={'25px'}>
-            CONNECT. INNOVATE. INSPIRE.
+          CONNECT. INNOVATE. INSPIRE.
+        </Text>
+        <VStack
+          spacing={0}
+          align={'start'}
+          fontSize={{ base: '0.75rem', sm: '1rem', md: '1.25rem' }}
+          lineHeight={2}
+        >
+          <Text padding={0} margin={0}>
+            <PhoneIcon color={'#FDC20A'} /> Contact:{' '}
+            <Link target={'_blank'} href={'tel:+918762719014'}>
+              +91 87627 19014
+            </Link>
           </Text>
-          <VStack spacing={0} align={'start'}>
-            <Text padding={0} margin={0}>
-              <PhoneIcon color={'#FDC20A'} /> Contact:{' '}
-              <Link target={'_blank'} href={'tel:+918762719014'}>
-                +91 87627 19014
-              </Link>
-            </Text>
-            <Text padding={0} margin={0}>
-              <EmailIcon color={'#FDC20A'} /> Email:{' '}
-              <Link target={'_blank'} href={'mailto:team@celbitsgoa.com'}>
-                team@celbitsgoa.com
-              </Link>
-            </Text>
-          </VStack>
-        </HStack>
-        <HStack align={'center'}>
-          <Text>Made with </Text>
-          <Icon as={BsHeart} color={'#FDC20A'} />
-          <Text> by </Text>
-          <Link target={'_blank'} href={'https://devsoc.club/'}>
-            DevSoc
-          </Link>
-        </HStack>
-      </VStack>
-    </Box>
+          <Text padding={0} margin={0}>
+            <EmailIcon color={'#FDC20A'} /> Email:{' '}
+            <Link target={'_blank'} href={'mailto:team@celbitsgoa.com'}>
+              team@celbitsgoa.com
+            </Link>
+          </Text>
+        </VStack>
+      </Flex>
+      <HStack alignSelf={'center'}>
+        <Text>Made with </Text>
+        <Icon as={BsHeart} color={'#FDC20A'} />
+        <Text> by </Text>
+        <Link target={'_blank'} href={'https://devsoc.club/'}>
+          DevSoc
+        </Link>
+      </HStack>
+    </Flex>
   );
 };
 

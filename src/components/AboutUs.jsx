@@ -8,6 +8,8 @@ const AboutUs = () => {
       color={'white'}
       paddingY={{ base: '1.5rem' }}
       fontSize={'20px'}
+      minHeight={'calc(100vh - 6rem)'}
+      id='about'
     >
       <VStack>
         <HStack align={'center'} justify={'center'} paddingBottom={3}>

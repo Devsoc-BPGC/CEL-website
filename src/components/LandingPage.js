@@ -14,6 +14,7 @@ const LandingPage = () => {
       backgroundRepeat='no-repeat'
       backgroundSize={{ base: '225px', sm: 'initial' }}
       backgroundPosition={{ base: 'bottom', sm: 'right 0 top 0' }}
+      id='home'
     >
       <Text
         color={'white'}

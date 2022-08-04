@@ -12,12 +12,12 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import logo from '../assets/img/logo.png';
 
 const Links = [
-  'Home',
-  'About Us',
-  'Coalescence',
-  'Novatia',
-  'Initiatives',
-  'Contact',
+  { text: 'Home', link: 'home' },
+  { text: 'About Us', link: 'about' },
+  { text: 'Coalescence', link: 'about' },
+  { text: 'Novatia', link: 'about' },
+  { text: 'Initiatives', link: 'about' },
+  { text: 'Contact', link: 'contact' },
 ];
 
 const NavLink = ({ children }) => (
@@ -29,9 +29,19 @@ const NavLink = ({ children }) => (
       borderBottom: '4px solid #FDC20A',
       transitionDuration: '1s',
     }}
-    href={'#'}
+    onClick={() => {
+      var element = document.getElementById(children.link);
+      var headerOffset = 96;
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }}
   >
-    {children}
+    {children.text}
   </Link>
 );
 
@@ -54,7 +64,7 @@ export default function Navbar() {
 
           <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
             {Links.map(link => (
-              <NavLink key={link}>{link}</NavLink>
+              <NavLink key={link.text}>{link}</NavLink>
             ))}
           </HStack>
         </Flex>

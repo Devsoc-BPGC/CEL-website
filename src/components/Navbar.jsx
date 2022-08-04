@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
@@ -8,7 +7,6 @@ import {
   IconButton,
   Image,
   useDisclosure,
-  Slide,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import logo from '../assets/img/logo.png';
@@ -22,7 +20,7 @@ const Links = [
   'Contact',
 ];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children }) => (
   <Link
     px={1}
     borderBottom='4px solid transparent'
@@ -43,9 +41,14 @@ export default function Navbar() {
   return (
     <Flex
       flexDirection='column'
-      sx={isOpen ? { height: '100vh', zIndex: 1 } : {}}
+      height={'6rem'}
+      bg='black'
+      position={'sticky'}
+      top={0}
+      sx={isOpen && { zIndex: 1 }}
+      overflowX={'clip'}
     >
-      <Box fontWeight={700} fontSize='20px' color='white' bg='black' px={4}>
+      <Box fontWeight={700} fontSize='20px' color='white' px={4}>
         <Flex h='95px' alignItems={'center'} justifyContent={'space-between'}>
           <Image minW='0' src={logo} alt='cel_logo' />
 
@@ -86,32 +89,28 @@ export default function Navbar() {
           />
         </Flex>
       </Box>
-
-      {isOpen && (
-        <Slide
-          direction='center'
-          in={isOpen}
-          style={{ position: 'relative', flexGrow: 1 }}
-        >
-          <Box
-            fontWeight={700}
-            fontSize='20px'
-            bg='blackAlpha.700'
-            height='100%'
-            display={{ md: 'none' }}
-            pb={4}
-            pr={8}
-          >
-            <Flex justifyContent={'end'} alignItems={'center'}>
-              <VStack alignItems={'end'} as={'nav'} spacing={4}>
-                {Links.map(link => (
-                  <NavLink key={link}>{link}</NavLink>
-                ))}
-              </VStack>
-            </Flex>
-          </Box>
-        </Slide>
-      )}
+      <Box
+        fontWeight={700}
+        fontSize='20px'
+        bg='blackAlpha.700'
+        height={'calc(100vh - 6rem)'}
+        display={{ md: 'none' }}
+        pb={4}
+        pr={8}
+        position={'absolute'}
+        top={'6rem'}
+        width={'100%'}
+        left={isOpen ? '0' : '100%'}
+        transitionDuration={'0.8s'}
+      >
+        <Flex justifyContent={'end'} alignItems={'center'}>
+          <VStack alignItems={'end'} as={'nav'} spacing={4}>
+            {Links.map(link => (
+              <NavLink key={link}>{link}</NavLink>
+            ))}
+          </VStack>
+        </Flex>
+      </Box>
     </Flex>
   );
 }

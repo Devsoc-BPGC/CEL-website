@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <Box
       textAlign={'left'}
-      pt={{ base: '33%', sm: '15%' }}
+      pt={{ base: '33%', lg: '15%' }}
       px={{ base: '2rem', md: '3rem' }}
       height='calc(100vh - 6rem)'
       width='100%'
@@ -14,6 +14,7 @@ const LandingPage = () => {
       backgroundRepeat='no-repeat'
       backgroundSize={{ base: '225px', sm: 'initial' }}
       backgroundPosition={{ base: 'bottom', sm: 'right 0 top 0' }}
+      id='home'
     >
       <Text
         color={'white'}

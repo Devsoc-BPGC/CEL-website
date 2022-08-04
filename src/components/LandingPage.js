@@ -37,7 +37,7 @@ const LandingPage = () => {
           fontStyle={'normal'}
           fontSize={{ base: '20px', md: '34px' }}
           lineHeight={{ base: '20px', md: '34px' }}
-          w={{ base: '300px', md: '702px' }}
+          w={{ base: '300px', md: '500px', lg: '702px' }}
           mt={{ base: '5px', md: '0px' }}
         >
           CEL BITS Goa aims to bring together like-minded people, with a passion
@@ -57,7 +57,7 @@ const LandingPage = () => {
         </Circle>
       </Box>
       <Box
-        w={{ base: '160px', md: '444px' }}
+        w={{ base: '160px', md: '305px', lg: '444px' }}
         position='absolute'
         top={{ base: '204px', md: '0px' }}
         right={{ base: '110px', md: '0px' }}

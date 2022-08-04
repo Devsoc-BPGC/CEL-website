@@ -1,4 +1,4 @@
-import { Box, Circle, Text, Image } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const LandingPage = () => {

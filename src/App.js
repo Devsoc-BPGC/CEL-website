@@ -5,7 +5,7 @@ import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 import TeamMemberGrid from './components/TeamMemberGrid';
 import Footer from './components/Footer';
-import AboutUs from './components/AboutUs.jsx';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (

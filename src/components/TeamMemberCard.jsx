@@ -3,7 +3,7 @@ import { Box, Text, Avatar, Flex } from '@chakra-ui/react';
 
 const TeamMemberCard = props => {
   return (
-    <Box w={200}>
+    <Box w={200} h={250} borderRight={'2px'} borderBottom={'2px'}>
       <Avatar size='2xl' name={props.name} src='#' />
       <Text fontWeight={700} fontSize='22px' color='#FDC20A' p={2}>
         {props.title.toUpperCase()}

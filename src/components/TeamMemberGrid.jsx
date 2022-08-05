@@ -5,7 +5,11 @@ import { SimpleGrid, Box } from '@chakra-ui/react';
 const TeamMemberGrid = () => {
   return (
     <Box textAlign='center' color='white' bg='black' p={100}>
-      <SimpleGrid columns={[1, 2, 3]} spacing='20px' justifyItems='center'>
+      <SimpleGrid
+        columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
+        spacing='80px'
+        justifyItems='center'
+      >
         <TeamMemberCard
           name='John Smith'
           title='Coordinator'

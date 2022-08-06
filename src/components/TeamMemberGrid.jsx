@@ -4,7 +4,7 @@ import { SimpleGrid, Box } from '@chakra-ui/react';
 
 const TeamMemberGrid = () => {
   return (
-    <Box textAlign='center' color='white' bg='black' p={100}>
+    <Box textAlign='center' color='white' bg='black' p={100} id='contact'>
       <SimpleGrid
         columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
         spacing='80px'

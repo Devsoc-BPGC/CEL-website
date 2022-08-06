@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Avatar, Flex, Link, Image } from '@chakra-ui/react';
+import { Text, Avatar, Flex, Link } from '@chakra-ui/react';
 
 const TeamMemberCard = props => {
   return (

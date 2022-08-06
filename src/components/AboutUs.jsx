@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, HStack, VStack } from '@chakra-ui/react';
+import { Text, HStack, VStack } from '@chakra-ui/react';
 
 const AboutUs = () => {
   return (

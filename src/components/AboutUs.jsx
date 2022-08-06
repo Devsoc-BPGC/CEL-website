@@ -9,8 +9,6 @@ const AboutUs = () => {
       paddingY={{ base: '1.5rem' }}
       fontSize={'20px'}
       id='about'
-      minH={'calc(100vh - 6rem)'}
-      justify={'center'}
     >
       <HStack align={'center'} justify={'center'} paddingBottom={3}>
         <Text fontWeight={700} fontSize={{ base: 32, sm: 44, lg: 65 }}>

@@ -10,6 +10,7 @@ const TeamMemberCard = props => {
       transitionDuration={'0.8s'}
       _hover={{
         boxShadow: '10px 10px 5px white',
+        transform: 'scale(1.075)',
       }}
       border={'2px solid #eee'}
       backgroundImage={

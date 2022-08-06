@@ -6,11 +6,12 @@ import React from 'react';
 const Footer = () => {
   return (
     <Flex
-      bg='black'
+      bg='#111'
       color='white'
       flexDirection={'column'}
       px={{ base: '0.75rem', sm: '1rem', md: '2rem' }}
       py={'1rem'}
+      id='contact'
     >
       <Flex
         direction={{ base: 'column', lg: 'row' }}
@@ -22,7 +23,7 @@ const Footer = () => {
           fontSize={{ base: '1rem', sm: '1.5rem', md: '2rem' }}
           py={{ base: '0.25rem', md: '0' }}
         >
-          CONNECT. INNOVATE. INSPIRE.
+          IDEATE. INNOVATE. INSPIRE.
         </Text>
         <VStack
           spacing={0}

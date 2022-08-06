@@ -111,7 +111,7 @@ const InitiativeLeft = props => {
 
 const Initiatives = () => {
   return (
-    <Box>
+    <Box id='initiatives'>
       <InitiativeLeft
         title='Campus Ambassador Program'
         desc='An opportunity for the young aspirers to excel, by representing, promoting our initiatives and aligning with our motives.'

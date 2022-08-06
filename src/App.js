@@ -4,14 +4,14 @@ import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs.jsx';
-import Features from './components/Features';
+import Initiatives from './components/Initiatives';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
       <LandingPage />
-      <Features />
+      <Initiatives />
       <AboutUs />
       <Footer />
     </ChakraProvider>

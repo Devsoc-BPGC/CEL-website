@@ -14,9 +14,9 @@ import logo from '../assets/img/logo.png';
 const Links = [
   { text: 'Home', link: 'home' },
   { text: 'About Us', link: 'about' },
+  { text: 'Initiatives', link: 'initiatives' },
   { text: 'Coalescence', link: 'about' },
   { text: 'Novatia', link: 'about' },
-  { text: 'Initiatives', link: 'initiatives' },
   { text: 'Team', link: 'team' },
   { text: 'Contact Us', link: 'contact' },
 ];
@@ -53,11 +53,12 @@ export default function Navbar() {
     <Flex
       flexDirection='column'
       height={'6rem'}
-      bg='black'
+      bg='#111'
       position={'sticky'}
       top={0}
       zIndex={1}
       overflowX={'clip'}
+      px={2}
     >
       <Box fontWeight={700} fontSize='20px' color='white' px={4}>
         <Flex h='95px' alignItems={'center'} justifyContent={'space-between'}>

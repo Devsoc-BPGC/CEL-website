@@ -1,12 +1,12 @@
 import { Text, VStack, HStack, Link, Icon, Flex } from '@chakra-ui/react';
-import { PhoneIcon, EmailIcon,  } from '@chakra-ui/icons';
+import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 import { BsHeart } from 'react-icons/bs';
 import React from 'react';
 
 const Footer = () => {
   return (
     <Flex
-      bg='black'
+      bg='#111'
       color='white'
       flexDirection={'column'}
       px={{ base: '0.75rem', sm: '1rem', md: '2rem' }}

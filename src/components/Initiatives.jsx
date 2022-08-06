@@ -3,16 +3,15 @@ import {
   Box,
   Text,
   Image,
-  // Button,
   Spacer,
   Stack,
   VStack,
+  HStack,
 } from '@chakra-ui/react';
 
 const InitiativeRight = props => {
   return (
     <Box
-      bg={'black'}
       paddingX={{ base: '0.75rem', sm: '1rem', md: '5rem' }}
       paddingY={{ base: '1.5rem' }}
     >
@@ -27,27 +26,32 @@ const InitiativeRight = props => {
           />
         </Box>
         <Spacer />
-        <VStack align={{ base: 'center', md: 'end' }}>
+        <VStack
+          align={{ base: 'center', md: 'end' }}
+          maxW={{
+            base: 'calc(100% - 4rem)',
+            sm: 'calc(100% - 12rem)',
+            md: 'calc(100% - 20rem)',
+          }}
+        >
           <Text
             color={'#FDC20A'}
             fontFamily={'League Spartan'}
-            fontSize={{ base: '20px', sm: '45px', lg: '60px' }}
+            fontSize={{ base: '20px', sm: '35px', lg: '45px' }}
             textAlign={['center', 'end']}
             fontStyle={'normal'}
             fontWeight={700}
-            lineHeight={{ base: '20px', sm: '45px', lg: '60px' }}
+            lineHeight={{ base: '20px', sm: '35px', lg: '45px' }}
             letterSpacing={'-0.06em'}
           >
             {props.title.toUpperCase()}
           </Text>
           <Text
-            color={'white'}
             textAlign={['center', 'end']}
             fontFamily={'Josefin Sans'}
             fontStyle={'normal'}
             fontSize={{ md: '30px' }}
             lineHeight={{ base: '20px', md: '34px' }}
-            w={{ base: '300px', md: '500px', lg: '702px' }}
           >
             {props.desc}
           </Text>
@@ -60,7 +64,6 @@ const InitiativeRight = props => {
 const InitiativeLeft = props => {
   return (
     <Box
-      bg={'black'}
       paddingX={{ base: '0.75rem', sm: '1rem', md: '5rem' }}
       paddingY={{ base: '1.5rem' }}
     >
@@ -74,28 +77,32 @@ const InitiativeLeft = props => {
             objectFit={'cover'}
           />
         </Box>
-        <Spacer />
-        <VStack align={{ base: 'center', md: 'start' }}>
+        <VStack
+          align={{ base: 'center', md: 'start' }}
+          maxW={{
+            base: 'calc(100% - 4rem)',
+            sm: 'calc(100% - 12rem)',
+            md: 'calc(100% - 20rem)',
+          }}
+        >
           <Text
             color={'#FDC20A'}
             fontFamily={'League Spartan'}
-            fontSize={{ base: '20px', sm: '45px', lg: '60px' }}
-            fontStyle={'normal'}
+            fontSize={{ base: '20px', sm: '35px', lg: '45px' }}
             textAlign={['center', 'start']}
+            fontStyle={'normal'}
             fontWeight={700}
-            lineHeight={{ base: '20px', sm: '45px', lg: '60px' }}
+            lineHeight={{ base: '20px', sm: '35px', lg: '45px' }}
             letterSpacing={'-0.06em'}
           >
             {props.title.toUpperCase()}
           </Text>
           <Text
-            color={'white'}
             textAlign={['center', 'start']}
             fontFamily={'Josefin Sans'}
             fontStyle={'normal'}
             fontSize={{ md: '30px' }}
             lineHeight={{ base: '20px', md: '34px' }}
-            w={{ base: '300px', md: '500px', lg: '702px' }}
           >
             {props.desc}
           </Text>
@@ -105,17 +112,21 @@ const InitiativeLeft = props => {
   );
 };
 
-// const CallToActionButton = () => {
-//   return (
-//     <Button width={'200px'} position={'unset'} height={'60px'} bg='#FDC20A'>
-//       Call to action
-//     </Button>
-//   );
-// };
-
 const Initiatives = () => {
   return (
-    <Box id='initiatives'>
+    <Box id='initiatives' bg={'black'} color={'white'}>
+      <HStack align={'center'} justify={'center'} paddingBottom={3}>
+        <Text fontWeight={700} fontSize={{ base: 32, sm: 44, lg: 65 }}>
+          Our
+        </Text>
+        <Text
+          color={'#FDC20A'}
+          fontWeight={700}
+          fontSize={{ base: 32, sm: 44, lg: 65 }}
+        >
+          Initiatives
+        </Text>
+      </HStack>
       <InitiativeLeft
         title='Campus Ambassador Program'
         desc='An opportunity for the young aspirers to excel, by representing, promoting our initiatives and aligning with our motives.'

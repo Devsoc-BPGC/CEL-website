@@ -121,49 +121,49 @@ const Initiatives = () => {
       <InitiativeRight
         title='Startup School'
         desc='Course-line designed for curious teens eager to break into entrepreneurship.'
-        img='#'
+        img='/startup school.jpg'
       />
 
       <InitiativeLeft
         title='Newsletter'
         desc='Biweekly articles covering the startup ecosystem and more. Researched, curated and brought to life by a team of passionate folks in CEL.'
-        img='#'
+        img='/newsletter.jpg'
       />
 
       <InitiativeRight
         title='Vriddhi'
         desc='Financial literacy sessions for the supporting staff on campus.'
-        img='#'
+        img='/Vriddhi.png'
       />
 
       <InitiativeLeft
         title='RED : (Rural Entrepreneurship Development program)'
         desc='We aim to promote Economic Empowerment with Business Innovation by backing self-sustaining Social Ventures, giving back to the Society.'
-        img='#'
+        img='/RED.png'
       />
 
       <InitiativeRight
         title='Networking dinner'
         desc='A one-of-a-kind, exclusive event for networking and exchanging ideas with esteemed individuals from the entrepreneurial community. Closed-door event.'
-        img='#'
+        img='/networking dinner.jpg'
       />
 
       <InitiativeLeft
         title='Pitch your startup'
         desc='Recurring event on campus, where young founders can pitch their ideas in front of a large audience, find their co-founders and hire other like-minded individuals on board.'
-        img='#'
+        img='/pitch your company.jpg'
       />
 
       <InitiativeRight
         title='Today I Learned'
         desc='A series of workshops and sessions aimed at upskilling the associates of CEL.'
-        img='#'
+        img='/today i learned.png'
       />
 
       <InitiativeLeft
         title='Built In-House'
         desc='An initiative to bring BITSian startups into limelight, by helping them get their reach through our social media handles.'
-        img='#'
+        img='/built in-house.png'
       />
     </Box>
   );

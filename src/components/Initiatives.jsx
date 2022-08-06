@@ -31,6 +31,7 @@ const InitiativeRight = props => {
             color={'#FDC20A'}
             fontFamily={'League Spartan'}
             fontSize={{ base: '36px', md: '65px' }}
+            textAlign={['center', 'end']}
             fontStyle={'normal'}
             fontWeight={700}
             lineHeight={{ base: '35px', md: '60px' }}
@@ -78,6 +79,7 @@ const InitiativeLeft = props => {
             fontFamily={'League Spartan'}
             fontSize={{ base: '36px', md: '65px' }}
             fontStyle={'normal'}
+            textAlign={['center', 'start']}
             fontWeight={700}
             lineHeight={{ base: '35px', md: '60px' }}
             letterSpacing={'-0.06em'}

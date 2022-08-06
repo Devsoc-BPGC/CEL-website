@@ -11,7 +11,6 @@ const Footer = () => {
       flexDirection={'column'}
       px={{ base: '0.75rem', sm: '1rem', md: '2rem' }}
       py={'1rem'}
-      id='contact'
     >
       <Flex
         direction={{ base: 'column', lg: 'row' }}

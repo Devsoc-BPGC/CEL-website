@@ -11,9 +11,9 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <TeamMemberGrid />
       <LandingPage />
       <AboutUs />
+      <TeamMemberGrid />
       <Footer />
     </ChakraProvider>
   );

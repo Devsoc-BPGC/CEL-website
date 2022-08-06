@@ -101,13 +101,13 @@ const InitiativeLeft = props => {
   );
 };
 
-const CallToActionButton = () => {
-  return (
-    <Button width={'200px'} position={'unset'} height={'60px'} bg='#FDC20A'>
-      Call to action
-    </Button>
-  );
-};
+// const CallToActionButton = () => {
+//   return (
+//     <Button width={'200px'} position={'unset'} height={'60px'} bg='#FDC20A'>
+//       Call to action
+//     </Button>
+//   );
+// };
 
 const Initiatives = () => {
   return (

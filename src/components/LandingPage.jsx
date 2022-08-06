@@ -1,20 +1,24 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const LandingPage = () => {
   return (
-    <Box
+    <Flex
       textAlign={'left'}
-      pt={{ base: '50%', lg: '15%' }}
       px={{ base: '2rem', md: '3rem' }}
-      height='calc(100vh - 6rem)'
+      minH='calc(100vh - 6rem)'
       width='100%'
-      backgroundImage='url(/lantern.jpg)'
+      backgroundImage={{
+        base: 'linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/lantern.jpg);',
+        sm: 'url(/lantern.jpg)',
+      }}
       backgroundColor='black'
       backgroundRepeat='no-repeat'
       backgroundSize={{ base: 'contain', sm: 'initial' }}
-      backgroundPosition={{ base: 'bottom', sm: 'right 0 top 0' }}
+      backgroundPosition={{ base: 'top', sm: 'right 0 top 0' }}
       id='home'
+      direction={'column'}
+      justify={'center'}
     >
       <Text
         color={'white'}
@@ -50,9 +54,9 @@ const LandingPage = () => {
       >
         CEL BITS Goa aims to bring together like-minded people, with a passion
         for creating something from the ground up, and an unmatched
-        Entrepreneurial spirit
+        entrepreneurial spirit!
       </Text>
-    </Box>
+    </Flex>
   );
 };
 export default LandingPage;

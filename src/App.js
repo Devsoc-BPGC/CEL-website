@@ -13,8 +13,8 @@ function App() {
     <ChakraProvider theme={theme}>
       <Navbar />
       <LandingPage />
-      <Initiatives />
       <AboutUs />
+      <Initiatives />
       <TeamMemberGrid />
       <Footer />
     </ChakraProvider>

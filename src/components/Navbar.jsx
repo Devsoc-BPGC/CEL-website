@@ -17,7 +17,8 @@ const Links = [
   { text: 'Coalescence', link: 'about' },
   { text: 'Novatia', link: 'about' },
   { text: 'Initiatives', link: 'initiatives' },
-  { text: 'Contact', link: 'contact' },
+  { text: 'Team', link: 'team' },
+  { text: 'Contact Us', link: 'contact' },
 ];
 
 const NavLink = ({ children }) => (
@@ -55,14 +56,14 @@ export default function Navbar() {
       bg='black'
       position={'sticky'}
       top={0}
-      sx={isOpen && { zIndex: 1 }}
+      zIndex={1}
       overflowX={'clip'}
     >
       <Box fontWeight={700} fontSize='20px' color='white' px={4}>
         <Flex h='95px' alignItems={'center'} justifyContent={'space-between'}>
           <Image minW='0' src={logo} alt='cel_logo' />
 
-          <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
+          <HStack as={'nav'} spacing={4} display={{ base: 'none', lg: 'flex' }}>
             {Links.map(link => (
               <NavLink key={link.text}>{link}</NavLink>
             ))}
@@ -94,7 +95,7 @@ export default function Navbar() {
               )
             }
             aria-label={'Open Menu'}
-            display={{ md: 'none' }}
+            display={{ lg: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
         </Flex>
@@ -104,7 +105,7 @@ export default function Navbar() {
         fontSize='20px'
         bg='blackAlpha.700'
         height={'calc(100vh - 6rem)'}
-        display={{ md: 'none' }}
+        display={{ lg: 'none' }}
         pb={4}
         pr={8}
         position={'absolute'}

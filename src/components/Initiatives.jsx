@@ -19,10 +19,11 @@ const InitiativeRight = props => {
       <Stack direction={{ base: 'column', md: 'row' }} align={'center'}>
         <Box>
           <Image
-            borderRadius='full'
-            boxSize={{ base: '20rem', sm: '20rem', md: '20rem', lg: '30rem' }}
+            borderRadius={{ base: '2rem', sm: '6rem', md: '10rem' }}
+            boxSize={{ base: '4rem', sm: '12rem', md: '20rem' }}
             src={props.img}
             alt='Image'
+            objectFit={'cover'}
           />
         </Box>
         <Spacer />
@@ -30,11 +31,11 @@ const InitiativeRight = props => {
           <Text
             color={'#FDC20A'}
             fontFamily={'League Spartan'}
-            fontSize={{ base: '36px', md: '65px' }}
+            fontSize={{ base: '20px', sm: '45px', lg: '60px' }}
             textAlign={['center', 'end']}
             fontStyle={'normal'}
             fontWeight={700}
-            lineHeight={{ base: '35px', md: '60px' }}
+            lineHeight={{ base: '20px', sm: '45px', lg: '60px' }}
             letterSpacing={'-0.06em'}
           >
             {props.title.toUpperCase()}
@@ -66,10 +67,11 @@ const InitiativeLeft = props => {
       <Stack direction={{ base: 'column', md: 'row-reverse' }} align={'center'}>
         <Box>
           <Image
-            borderRadius='full'
-            boxSize={{ base: '20rem', sm: '20rem', md: '20rem', lg: '30rem' }}
+            borderRadius={{ base: '2rem', sm: '6rem', md: '10rem' }}
+            boxSize={{ base: '4rem', sm: '12rem', md: '20rem' }}
             src={props.img}
             alt='Image'
+            objectFit={'cover'}
           />
         </Box>
         <Spacer />
@@ -77,11 +79,11 @@ const InitiativeLeft = props => {
           <Text
             color={'#FDC20A'}
             fontFamily={'League Spartan'}
-            fontSize={{ base: '36px', md: '65px' }}
+            fontSize={{ base: '20px', sm: '45px', lg: '60px' }}
             fontStyle={'normal'}
             textAlign={['center', 'start']}
             fontWeight={700}
-            lineHeight={{ base: '35px', md: '60px' }}
+            lineHeight={{ base: '20px', sm: '45px', lg: '60px' }}
             letterSpacing={'-0.06em'}
           >
             {props.title.toUpperCase()}

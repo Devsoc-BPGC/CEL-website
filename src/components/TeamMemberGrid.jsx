@@ -11,7 +11,7 @@ import Harsha from '../assets/img/coordis/Harsha.jpg';
 
 const TeamMemberGrid = () => {
   return (
-    <Box color='white' bg='black' p={25} id='contact'>
+    <Box color='white' bg='black' p={25} id='team'>
       <Text fontWeight={700} fontSize={{ base: 32, sm: 44, lg: 65 }}>
         COORDINATORS
       </Text>
@@ -20,6 +20,7 @@ const TeamMemberGrid = () => {
         fontSize={{ base: 32, sm: 44, lg: 65 }}
         color='#FDC20A'
         p={2}
+        mb={8}
       >
         FOR 2022-23
       </Text>
@@ -59,7 +60,7 @@ const TeamMemberGrid = () => {
           image={Harsha}
         />
         <TeamMemberCard
-          name='Utkarsh'
+          name='Utkarsh Bharadwaj'
           title='Operations & Finance Head'
           linkedIn='https://www.linkedin.com/in/utkarsh-bharadwaj-b65758204'
           image={Utkarsh}

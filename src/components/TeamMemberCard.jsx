@@ -18,6 +18,7 @@ const TeamMemberCard = props => {
       py={12}
       direction={'column'}
       alignItems={'center'}
+      textAlign={'center'}
     >
       <Avatar
         w={{ base: '45vw', sm: 125, lg: 200 }}

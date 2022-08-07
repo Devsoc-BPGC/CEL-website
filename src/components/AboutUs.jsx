@@ -47,17 +47,6 @@ const AboutUs = () => {
         activities and funding select startups, we ensure that the next gen
         entrepreneurs are able to make it to the top.
       </Text>
-      <Text
-        paddingX={{ base: '1rem', sm: '2rem', md: '4rem' }}
-        paddingY={{ base: '0.5rem' }}
-        lineHeight={{ base: '2', sm: '1.5' }}
-      >
-        The many events we host and conduct go a long way in helping the
-        participants achieve their ultimate goal. Conducting our Annual E-
-        Summit, Coalescence, an entrepreneurial fest like no other, graced by
-        the presence of successful millionaire entrepreneurs, inspires and
-        guides students to achieve the unattainable!
-      </Text>
     </VStack>
   );
 };

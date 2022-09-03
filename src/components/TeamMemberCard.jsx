@@ -28,22 +28,24 @@ const TeamMemberCard = props => {
         src={props.image}
         position={'unset'}
       />
-      <Text
-        fontWeight={700}
-        fontSize={{ base: 16, lg: 20 }}
-        color='#FDC20A'
-        p={2}
-      >
-        {props.title.toUpperCase()}
-      </Text>
-      <Text fontWeight={600} fontSize={{ base: 16, lg: 20 }} p={2}>
-        {props.name.toUpperCase()}
-      </Text>
-      <Link href={props.linkedIn}>
-        <Text fontSize={{ base: 12, lg: 16 }} mt={2}>
-          LinkedIn Profile
+      <Flex direction={'column'} flexGrow={1} justifyContent={'center'}>
+        <Text
+          fontWeight={700}
+          fontSize={{ base: 16, lg: 20 }}
+          color='#FDC20A'
+          p={2}
+        >
+          {props.title.toUpperCase()}
         </Text>
-      </Link>
+        <Text fontWeight={600} fontSize={{ base: 16, lg: 20 }} p={2}>
+          {props.name.toUpperCase()}
+        </Text>
+        <Link href={props.linkedIn}>
+          <Text fontSize={{ base: 12, lg: 16 }} mt={2}>
+            LinkedIn Profile
+          </Text>
+        </Link>
+      </Flex>
     </Flex>
   );
 };

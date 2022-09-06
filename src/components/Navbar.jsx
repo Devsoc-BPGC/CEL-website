@@ -15,8 +15,8 @@ const Links = [
   { text: 'Home', link: 'home' },
   { text: 'About Us', link: 'about' },
   { text: 'Initiatives', link: 'initiatives' },
-  { text: 'Coalescence', link: 'about' },
-  { text: 'Novatia', link: 'about' },
+  { text: 'Coalescence', link: 'coalescence' },
+  { text: 'Novatia', link: 'novatia' },
   { text: 'Team', link: 'team' },
   { text: 'Contact Us', link: 'contact' },
 ];
@@ -66,7 +66,7 @@ export default function Navbar() {
 
           <HStack as={'nav'} spacing={4} display={{ base: 'none', lg: 'flex' }}>
             {Links.map(link => (
-              <NavLink key={link.text}>{link}</NavLink>
+              <NavLink key={link.link}>{link}</NavLink>
             ))}
           </HStack>
         </Flex>
@@ -114,11 +114,12 @@ export default function Navbar() {
         width={'100%'}
         left={isOpen ? '0' : '100%'}
         transitionDuration={'0.8s'}
+        onClick={onClose}
       >
         <Flex justifyContent={'end'} alignItems={'center'}>
           <VStack alignItems={'end'} as={'nav'} spacing={4}>
             {Links.map(link => (
-              <NavLink key={link}>{link}</NavLink>
+              <NavLink key={link.link}>{link}</NavLink>
             ))}
           </VStack>
         </Flex>

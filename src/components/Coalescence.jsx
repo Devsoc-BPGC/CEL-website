@@ -14,6 +14,7 @@ const Coalescence = () => {
         color={'#DBAB18'}
         fontSize={{ base: '3rem', md: '4rem' }}
         fontFamily={'League Spartan'}
+        align={{ base: 'center', lg: 'left' }}
       >
         Coalescence
       </Text>
@@ -23,19 +24,23 @@ const Coalescence = () => {
         py={'1rem'}
       >
         <Text
-          maxW={{ base: '100%', lg: '65%' }}
+          w={{ base: '100%', lg: '65%' }}
           fontSize={{ base: '1.75rem', md: '2.5rem' }}
+          py={'1rem'}
+          align={{ base: 'center', lg: 'left' }}
         >
           CEL BITS Goa is the organiser of BITS Goa’s annual E-summit,
           Coalescence.
         </Text>
-        <Countdown target={new Date('2022-10-1')} />
+        <Flex flexGrow={1} justifyContent={'center'}>
+          <Countdown target={new Date('2022-10-1')} />
+        </Flex>
       </Flex>
       <Text
         fontSize={{ base: '1.25rem', md: '1.75rem' }}
-        lineHeight={2}
+        lineHeight={1.5}
         py={'1rem'}
-        maxW={{ base: '100%', lg: '85%' }}
+        maxW={{ base: '100%', lg: '65%' }}
       >
         Coalescence hosts some top-notch entrepreneurs in India with several
         events, individual talks(ACTs) and a variety of panels such as - The

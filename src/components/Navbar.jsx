@@ -114,6 +114,7 @@ export default function Navbar() {
         width={'100%'}
         left={isOpen ? '0' : '100%'}
         transitionDuration={'0.8s'}
+        onClick={onClose}
       >
         <Flex justifyContent={'end'} alignItems={'center'}>
           <VStack alignItems={'end'} as={'nav'} spacing={4}>

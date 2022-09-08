@@ -23,7 +23,7 @@ const Novatia = () => {
         color={'#DBAB18'}
         fontSize={{ base: '3rem', md: '4rem' }}
         fontFamily={'League Spartan'}
-        align={{ base: 'center', lg: 'left' }}
+        align={{ base: 'center', lg: 'center' }}
       >
         Novatia
       </Text>
@@ -36,6 +36,8 @@ const Novatia = () => {
           w={{ base: '100%', lg: '65%' }}
           fontSize={{ base: '1.75rem', md: '2.5rem' }}
           py={'1rem'}
+          fontFamily={'League Spartan'}
+          color={'#D9D9D9'}
           align={{ base: 'center', lg: 'left' }}
         >
           ‘Choose a VC over a CV’
@@ -46,26 +48,29 @@ const Novatia = () => {
       </Flex>
       <Text
         fontSize={{ base: '1.25rem', md: '1.75rem' }}
-        lineHeight={2}
+        lineHeight={1.5}
         py={'1rem'}
-        maxW={{ base: '100%', lg: '85%' }}
+        align={{ base: 'center', lg: 'left' }}
+        maxW={{ base: '100%', lg: '65%' }}
       >
         Do you have an innovative idea which has the power to bring about a
         positive change?
       </Text>
       <Text
         fontSize={{ base: '1.25rem', md: '1.75rem' }}
-        lineHeight={2}
+        lineHeight={1.5}
         py={'1rem'}
-        maxW={{ base: '100%', lg: '85%' }}
+        align={{ base: 'center', lg: 'left' }}
+        maxW={{ base: '100%', lg: '65%' }}
       >
         CEL BITS Goa brings to you ‘Novatia’, our flagship B-Plan competition.
       </Text>
       <Text
         fontSize={{ base: '1.25rem', md: '1.75rem' }}
-        lineHeight={2}
+        lineHeight={1.5}
         py={'1rem'}
-        maxW={{ base: '100%', lg: '85%' }}
+        align={{ base: 'center', lg: 'left' }}
+        maxW={{ base: '100%', lg: '65%' }}
       >
         Novatia provides a platform for founders to pitch their ideas or their
         products to the top Venture Capitals in India.

@@ -13,27 +13,33 @@ const Countdown = props => {
     <HStack wrap={'nowrap'} spacing={2} height={'fit-content'}>
       <Flex direction={'column'} align={'center'}>
         <Text mx={-10}>Days</Text>
-        <Text fontSize={'2.5rem'}>{days}</Text>
+        <Text fontSize={'2.5rem'} color={'#D9D9D9'}>
+          {days}
+        </Text>
       </Flex>
       <Text fontSize={'2.5rem'} alignSelf={'end'} color={'#FDC20A'}>
         :
       </Text>
       <Flex direction={'column'} align={'center'}>
         <Text mx={-10}>Hours</Text>
-        <Text fontSize={'2.5rem'}>{hours}</Text>
+        <Text fontSize={'2.5rem'} color={'#D9D9D9'}>
+          {hours}
+        </Text>
       </Flex>
       <Text fontSize={'2.5rem'} alignSelf={'end'} color={'#FDC20A'}>
         :
       </Text>
       <Flex direction={'column'} align={'center'}>
         <Text mx={-10}>Minutes</Text>
-        <Text fontSize={'2.5rem'}>{minutes}</Text>
+        <Text fontSize={'2.5rem'} color={'#D9D9D9'}>
+          {minutes}
+        </Text>
       </Flex>
       <Text
         fontSize={'2.5rem'}
         alignSelf={'end'}
-        color={'#FDC20A'}
         display={{ base: 'none', sm: 'block' }}
+        color={'#FDC20A'}
       >
         :
       </Text>
@@ -43,7 +49,9 @@ const Countdown = props => {
         display={{ base: 'none', sm: 'flex' }}
       >
         <Text mx={-10}>Seconds</Text>
-        <Text fontSize={'2.5rem'}>{seconds}</Text>
+        <Text fontSize={'2.5rem'} color={'#D9D9D9'}>
+          {seconds}
+        </Text>
       </Flex>
     </HStack>
   );

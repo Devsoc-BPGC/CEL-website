@@ -43,7 +43,7 @@ const TeamMemberGrid = () => {
         />
         <TeamMemberCard
           name='Rohan Fulwani'
-          title='CR & Sponsorship Head'
+          title='Corporate Relations & Sponsorship Head'
           linkedIn='https://www.linkedin.com/in/rohan-fulwani-5877b81b8'
           image={Rohan}
         />

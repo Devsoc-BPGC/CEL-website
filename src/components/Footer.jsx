@@ -1,6 +1,13 @@
 import { Text, VStack, HStack, Link, Icon, Flex } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 import { BsHeart } from 'react-icons/bs';
+import {
+  RiFacebookFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+  RiTwitterFill,
+  RiYoutubeFill,
+} from 'react-icons/ri';
 import React from 'react';
 
 const Footer = () => {
@@ -43,6 +50,35 @@ const Footer = () => {
               team@celbitsgoa.com
             </Link>
           </Text>
+          <HStack py={2}>
+            <Link
+              target={'_blank'}
+              href={'https://www.linkedin.com/company/celbitsgoa/'}
+            >
+              <RiLinkedinFill color={'#FDC20A'} />
+            </Link>
+            <Link target={'_blank'} href={'https://twitter.com/celbitsgoa'}>
+              <RiTwitterFill color={'#FDC20A'} />
+            </Link>
+            <Link
+              target={'_blank'}
+              href={'https://www.instagram.com/celbitsgoa/'}
+            >
+              <RiInstagramFill color={'#FDC20A'} />
+            </Link>
+            <Link
+              target={'_blank'}
+              href={'https://www.facebook.com/celbitsgoa/'}
+            >
+              <RiFacebookFill color={'#FDC20A'} />
+            </Link>
+            <Link
+              target={'_blank'}
+              href={'https://www.youtube.com/c/CoalescenceBITS'}
+            >
+              <RiYoutubeFill color={'#FDC20A'} />
+            </Link>
+          </HStack>
         </VStack>
       </Flex>
       <HStack alignSelf={'center'}>

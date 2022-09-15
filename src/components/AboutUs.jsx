@@ -25,7 +25,8 @@ const AboutUs = () => {
       <Text
         paddingX={{ base: '1rem', sm: '2rem', md: '4rem' }}
         paddingY={{ base: '0.5rem' }}
-        lineHeight={{ base: '2', sm: '1.5' }}
+        align={{ base: 'center', lg: 'center' }}
+        lineHeight={{ base: '1.5', sm: '2' }}
       >
         Centre for Entrepreneurial Leadership (CEL) is a society of eminence at
         BITS Pilani, Goa Campus, bridging Entrepreneurship and Innovation. We at
@@ -38,7 +39,8 @@ const AboutUs = () => {
       <Text
         paddingX={{ base: '1rem', sm: '2rem', md: '4rem' }}
         paddingY={{ base: '0.5rem' }}
-        lineHeight={{ base: '2', sm: '1.5' }}
+        lineHeight={{ base: '1.5', sm: '2' }}
+        align={{ base: 'center', lg: 'center' }}
       >
         Being the Entrepreneurship cell of one of the premier institutes of the
         country, it is our responsibility to ensure that we maintain a highly
@@ -46,17 +48,6 @@ const AboutUs = () => {
         nation! Through mentorship, teaching, conducting highly competitive
         activities and funding select startups, we ensure that the next gen
         entrepreneurs are able to make it to the top.
-      </Text>
-      <Text
-        paddingX={{ base: '1rem', sm: '2rem', md: '4rem' }}
-        paddingY={{ base: '0.5rem' }}
-        lineHeight={{ base: '2', sm: '1.5' }}
-      >
-        The many events we host and conduct go a long way in helping the
-        participants achieve their ultimate goal. Conducting our Annual E-
-        Summit, Coalescence, an entrepreneurial fest like no other, graced by
-        the presence of successful millionaire entrepreneurs, inspires and
-        guides students to achieve the unattainable!
       </Text>
     </VStack>
   );

@@ -7,11 +7,30 @@ import {
   useToast,
   VStack,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import { RiSendPlaneLine } from 'react-icons/ri';
 import Countdown from './Countdown';
 
 const Novatia = () => {
+  const [email, setEmail] = useState('');
   const toast = useToast();
+  const sendEmail = () => {
+    fetch(
+      'https://script.google.com/macros/s/AKfycbxbAkJCm6-Zp0Zz7i3D1NCnmObrPc3q6nhGhOG--BOpK_HvJ3mSFfwc745uk3VIoUch/exec',
+      {
+        body: JSON.stringify({ data: [new Date(), email] }),
+        method: 'POST',
+        mode: 'no-cors',
+      }
+    ).then(() => {
+      toast({
+        title: 'Email sent',
+        description: 'You are added to the watchlist for our events!',
+        status: 'success',
+      });
+      setEmail('');
+    });
+  };
   return (
     <Flex
       direction={'column'}
@@ -98,6 +117,8 @@ const Novatia = () => {
             _placeholder={{
               color: '#FDC20A',
             }}
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
           <InputRightAddon
             children={<RiSendPlaneLine color={'black'} size={25} />}
@@ -106,13 +127,7 @@ const Novatia = () => {
             _hover={{
               cursor: 'pointer',
             }}
-            onClick={() => {
-              toast({
-                title: 'Hey',
-                status: 'success',
-                duration: 300,
-              });
-            }}
+            onClick={sendEmail}
           />
         </InputGroup>
       </VStack>

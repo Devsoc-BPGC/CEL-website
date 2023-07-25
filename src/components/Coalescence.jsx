@@ -35,7 +35,7 @@ const Coalescence = () => {
           Coalescence.
         </Text>
         <Flex flexGrow={1} justifyContent={'center'}>
-          <Countdown target={new Date('2023-1-27')} />
+          <Countdown target={new Date('2023-9-15')} />
         </Flex>
       </Flex>
       <Text

@@ -50,6 +50,7 @@ const TeamMemberGrid = () => {
       </SimpleGrid>
       <SimpleGrid
         columns={{ base: 1, sm: 2, lg: 2 }}
+        spacing='50px'
         justifyItems='center'
         mt={'3rem'}
       >

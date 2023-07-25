@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { RiSendPlaneLine } from 'react-icons/ri';
-import Countdown from './Countdown';
 
 const Novatia = () => {
   const [email, setEmail] = useState('');

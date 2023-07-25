@@ -2,12 +2,11 @@ import React from 'react';
 import TeamMemberCard from './TeamMemberCard';
 import { SimpleGrid, Box, Text } from '@chakra-ui/react';
 
-import Saakshi from '../assets/img/coordis/Saakshi.jpg';
-import Utkarsh from '../assets/img/coordis/Utkarsh.jpg';
-import Rohan from '../assets/img/coordis/Rohan.jpg';
-import Pradyuman from '../assets/img/coordis/Pradyuman.jpg';
-import Kanha from '../assets/img/coordis/Kanha.jfif';
-import Harsha from '../assets/img/coordis/Harsha.jpg';
+import Harsh from '../assets/img/coordis/Harsh.jpg';
+import Sathvik from '../assets/img/coordis/Sathvik.jpg';
+import Archit from '../assets/img/coordis/Archit.jpg';
+import Aastha from '../assets/img/coordis/Aastha.jpg';
+import Simran from '../assets/img/coordis/Simran.jpg';
 
 const TeamMemberGrid = () => {
   return (
@@ -28,42 +27,43 @@ const TeamMemberGrid = () => {
         columns={{ base: 1, sm: 2, lg: 3 }}
         spacing='50px'
         justifyItems='center'
+        justifyContent={'center'}
       >
         <TeamMemberCard
-          name='Saakshi Adiga'
+          name='Harsh Singla'
           title='President'
-          linkedIn='https://www.linkedin.com/in/saakshi-adiga-ab43861b1/'
-          image={Saakshi}
+          linkedIn='https://www.linkedin.com/in/harshsinglaa/'
+          image={Harsh}
         />
         <TeamMemberCard
-          name='Kanha Mishra'
-          title='Vice President'
-          linkedIn='https://www.linkedin.com/in/kanha-mishra-10b1a8209/'
-          image={Kanha}
+          name='Aastha Kapoor'
+          title='Coalescence Convenor and Treasurer'
+          linkedIn='https://www.linkedin.com/in/aastha-kapoor-974066258/'
+          image={Aastha}
         />
         <TeamMemberCard
-          name='Rohan Fulwani'
-          title='Corporate Relations & Sponsorship Head'
-          linkedIn='https://www.linkedin.com/in/rohan-fulwani-5877b81b8'
-          image={Rohan}
+          name='Sathvik Nama'
+          title='Sponsorship and Public Relations Head '
+          linkedIn='https://www.linkedin.com/in/sathvik-nama-787563219/'
+          image={Sathvik}
+        />
+      </SimpleGrid>
+      <SimpleGrid
+        columns={{ base: 1, sm: 2, lg: 2 }}
+        justifyItems='center'
+        mt={'3rem'}
+      >
+        <TeamMemberCard
+          name='Archit Arya'
+          title='Operations and Initiatives Head'
+          linkedIn='https://www.linkedin.com/in/archit-arya-57355b15a/'
+          image={Archit}
         />
         <TeamMemberCard
-          name='Pradyuman Turlapati'
-          title='Events & Initiatives Head'
-          linkedIn='https://www.linkedin.com/in/pradyturlapati'
-          image={Pradyuman}
-        />
-        <TeamMemberCard
-          name='Harsha Battu'
-          title='Marketing & Design Head'
-          linkedIn='https://www.linkedin.com/in/harsha-battu-21b37b154/'
-          image={Harsha}
-        />
-        <TeamMemberCard
-          name='Utkarsh Bharadwaj'
-          title='Operations & Finance Head'
-          linkedIn='https://www.linkedin.com/in/utkarsh-bharadwaj-b65758204'
-          image={Utkarsh}
+          name='Simran Ahluwalia'
+          title='Marketing and Media Head'
+          linkedIn='https://www.linkedin.com/in/simran-ahluwalia-b96299245/'
+          image={Simran}
         />
       </SimpleGrid>
     </Box>

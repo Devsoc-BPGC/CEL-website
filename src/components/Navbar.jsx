@@ -16,7 +16,6 @@ const Links = [
   { text: 'About Us', link: 'about' },
   { text: 'Initiatives', link: 'initiatives' },
   { text: 'Coalescence', link: 'coalescence' },
-  { text: 'Novatia', link: 'novatia' },
   { text: 'Team', link: 'team' },
   { text: 'Contact Us', link: 'contact' },
 ];

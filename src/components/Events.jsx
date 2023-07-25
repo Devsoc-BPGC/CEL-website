@@ -14,7 +14,7 @@ const Events = () => {
       color={'white'}
     >
       <Coalescence />
-      {/* <Novatia /> */}
+      <Novatia />
     </Flex>
   );
 };

@@ -61,9 +61,9 @@ const Novatia = () => {
         >
           ‘Choose a VC over a CV’
         </Text>
-        <Flex flexGrow={1} justifyContent={'center'}>
+        {/* <Flex flexGrow={1} justifyContent={'center'}>
           <Countdown target={new Date('2023-2-24')} />
-        </Flex>
+        </Flex> */}
       </Flex>
       <Text
         fontSize={{ base: '1.25rem', md: '1.75rem' }}

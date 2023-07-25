@@ -40,8 +40,8 @@ const Footer = () => {
         >
           <Text padding={0} margin={0}>
             <PhoneIcon color={'#FDC20A'} /> Contact:{' '}
-            <Link target={'_blank'} href={'tel:+918762719014'}>
-              +91 87627 19014
+            <Link target={'_blank'} href={'tel:+917901861707'}>
+              +91 79018 61707
             </Link>
           </Text>
           <Text padding={0} margin={0}>

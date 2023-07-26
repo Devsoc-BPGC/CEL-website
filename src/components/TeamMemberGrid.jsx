@@ -21,7 +21,7 @@ const TeamMemberGrid = () => {
         p={2}
         mb={8}
       >
-        FOR 2022-23
+        FOR 2023-24
       </Text>
       <SimpleGrid
         columns={{ base: 1, sm: 2, lg: 3 }}

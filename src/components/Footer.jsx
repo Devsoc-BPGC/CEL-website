@@ -46,8 +46,14 @@ const Footer = () => {
           </Text>
           <Text padding={0} margin={0}>
             <EmailIcon color={'#FDC20A'} /> Email:{' '}
-            <Link target={'_blank'} href={'mailto:team@celbitsgoa.com'}>
-              team@celbitsgoa.com
+            <Link target={'_blank'} href={'mailto:harshsingla@celbitsgoa.com'}>
+              harshsingla@celbitsgoa.com
+            </Link>
+          </Text>
+          <Text padding={0} margin={0}>
+            <EmailIcon color={'#FDC20A'} /> Email:{' '}
+            <Link target={'_blank'} href={'mailto:aasthakapoor@celbitsgoa.com'}>
+              aasthakapoor@celbitsgoa.com
             </Link>
           </Text>
           <HStack py={2}>

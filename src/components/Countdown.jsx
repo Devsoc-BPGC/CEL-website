@@ -7,7 +7,7 @@ const Countdown = props => {
   setTimeout(() => setCountdown(Date.now()), 250);
   const seconds = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
   const minutes = String(Math.floor((diff / 60000) % 60)).padStart(2, '0');
-  const hours = String(Math.floor((diff / 3600000) % 60)).padStart(2, '0');
+  const hours = String(Math.floor((diff / 3600000) % 24)).padStart(2, '0');
   const days = String(Math.floor(diff / 86400000)).padStart(2, '0');
   return (
     <HStack wrap={'nowrap'} spacing={2} height={'fit-content'}>
